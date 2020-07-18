@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  font-size:16px;
+  font-weight: 300;
+  height: 100vh;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+*, ::before, ::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box; }
+
+/******************
+********TOP PART
+*********************/
+.top{
+background-color: rgb(190, 177, 177);
+flex-basis:40%;
+display: flex;
+flex-direction:row;
+justify-content: center;
+background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(Bilder/imageMechatroniker.jpg);
+background-position:bottom;
+}
+.budget{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.budget__value_ex_comin{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.bedgut__title{
+  text-align: center;
+  color:rgba(255, 255, 255, 0.815);
+}
+.budget__commin--value{
+  color:rgba(255, 255, 255, 0.815);
+}
+.budget__expenses--value{
+  color:rgba(255, 255, 255, 0.815);
+}
+.dudgut__value{
+  color:rgba(255, 255, 255, 0.815);
+  font-size: 30px;
+  font-weight:300;
+}
+.budget__commin{
+  width: 300px;
+  padding: 15px;
+  background-color:#4CC6B5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size:13px;
+  margin: 10px;
+  text-transform:uppercase;
+}
+/*****************
+*****Buttom Prt
+*********************/
+.budget__expenses{
+  text-transform:uppercase;
+  margin: 10px;
+  width: 300px;
+  padding: 15px;
+  background-color:#ff5049;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size:13px;
+}
+.buttom{
+background-color: inherit;
+flex-basis:60%;
+display: flex;
+flex-direction: column;
+}
+.top_buttom{
+  background-color: #F9F7F9;
+  flex-basis:20%;
+}
+.contaner{
+  width: 100%;
+  height: 100%;
+  background-color:inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+select {
+  
+  margin-right:20px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 2px 25px 1px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: unset;
+  appearance:unset;
+  outline: none;
+  height:40px;
+  border-radius: 5px;
+  text-align: center;
+}
+select option {
+  color: black;
+  width: auto;
+  font-weight: 900;
+  text-align: center;
+}
+/**************
+********* input
+****************/
+.form__input {
+  color: #555;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  height:40.5px;
+  width: 330px;
+  box-shadow: 0 2px 25px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.form__input:active,:focus{
+  outline:none;
+  border: 1px solid #4CC6B5;
+}
+.form_input_number{
+  color: #555;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  height:39px;
+  width: 100px;
+  box-shadow: 0 2px 25px 1px rgba(0, 0, 0, 0.1);
+  transition: all .5s;
+  margin-left: 20px;
+  -webkit-appearance:none;
+}
+.form_input_number::-webkit-outer-spin-button,
+.form_input_number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form_input_number[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form_input_number:active,:focus{
+  outline: none;
+  border: 1px solid #4CC6B5;
+}
+input[type=number]:focus::-webkit-inner-spin-button, 
+input[type=number]:focus::-webkit-outer-spin-button, 
+input[type=number]:hover::-webkit-inner-spin-button, 
+input[type=number]:hover::-webkit-outer-spin-button { 
+    -webkit-appearance: inner-spin-button; 
+    margin: 0 2px 0 0 ; 
+} 
+input[type=number]:focus, 
+input[type=number]:hover { 
+    -moz-appearance:number-input; 
+} 
+.icon-arrows-circle-check{
+  font-size: 24px;
+  transform: translate(20px,3px);
+  color: #4CC6B5;
+}
+.buttom_buttom{
+  background-color:inherit;
+  flex-basis:85%;
+  }
+  .contaner_buttom{
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .commin_buttom{
+    background-color: inherit;
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .expensise_buttom{
+    background-color: inherit;
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont{
+    background-color:inherit;
+    flex-basis:70%;
+    width:400px;
+  }
+  .cont span{
+    text-transform: uppercase;
+  }
+  .expensis_span{
+    color: #ff5049;
+  }
+  .commin_span{
+    color: #4CC6B5;
+  }
+ .list_item{
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: inherit;
+  width: 100%;
+  transition:all 1s ease-in-out;
+}
+ .list_item li{
+  background-color: inherit;
+  width:100%;
+  padding:10px;
+  margin-top: 5px;
+  border: 1px solid rgba(112, 108, 108, 0.329);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  transition: all .5s ease-in-out;
+  
+}
+ .list_item li .tytel_enven{
+ font-size: 13px;
+ text-transform: capitalize;
+}
+ .budget_event{
+ margin-left: auto;
+ font-size: 13px;
+ color: #ff5049;
+}
+ .procentag{
+  margin-left: 10px;
+  margin-right:0px;
+  font-size: 7px;
+  color: #ff0800;
+  padding: 2.5px;
+  background-color:#fad1d0;
+  align-self:center;
+  transform: translateY(1px);
+}
+ .icon-arrows-circle-remove{
+  margin-left:10px;
+  font-size:12px;
+  color: #ff0800;
+  align-self:flex-end;
+  transform: translateY(1px);
+}
+ .budget_event_comin{
+  margin-left: auto;
+  font-size: 13px;
+  color: #4CC6B5;
+ }
+ .procentag_comin{
+   margin-left: 10px;
+   margin-right:0px;
+   font-size: 7px;
+   color: #4CC6B5;
+   padding: 2.5px;
+   background-color:rgb(212, 255, 250);
+   align-self:center;
+   transform: translateY(1px);
+ }
+ .comin_icon{
+  color: #4CC6B5;
+ }
+ .check_button{
+   border: 0px;
+   background-color: inherit;
+   margin-left: 20px;
+   cursor: pointer;
+ }
+ .btn-delet{
+   border: none;
+   background-color: inherit;
+   cursor: pointer;
+  display: none; 
+ 
+ }
+
+ li:hover > button{
+   display: inline;
+   
+ }
+
+ .event_change_exp{
+  outline:none;
+  border: 1px solid #ff5049;
+ }
+ .event_change_inc{
+  outline:none;
+  border: 1px solid #4CC6B5;
+ }
+ .icon-arrows-circle-check_exp{
+  color: #ff5049;
+}
+.icon-arrows-circle-check_inc{
+  color: #4CC6B5;
+}
+
+                                                                                  /*
+                                                                                  ******************Select Box
+                                                                                  .custom-select{
+                                                                                    position: relative;
+                                                                                    display: block;
+                                                                                    max-width: 400px;
+                                                                                    min-width: 180px;
+                                                                                    margin: 0 auto;
+                                                                                    border: 1px solid #3C1C78;
+                                                                                    background-color: #16013E;
+                                                                                    z-index: 10;
+                                                                                  }
+                                                                                    select{ 
+                                                                                      border: none;
+                                                                                      outline: none;
+                                                                                      background: transparent;
+                                                                                      -webkit-appearance: none;
+                                                                                      -moz-appearance: none;
+                                                                                      appearance: none;;;
+                                                                                      border-radius: 0;;
+                                                                                      margin: 0;
+                                                                                      display: block;;
+                                                                                      width: 100%;
+                                                                                      padding: 12px 55px 15px 15px;
+                                                                                      font-size: 14px;
+                                                                                      color: #714BB9;}
+                                                                                    
+                                                                                    
+                                                                                    select:after
+                                                                                    {
+                                                                                      position: absolute;;
+                                                                                      right: 0;
+                                                                                      top: 0;
+                                                                                      width: 50px;
+                                                                                      height: 100%;
+                                                                                      line-height: 38px;
+                                                                                      content: '\2228';
+                                                                                      text-align: center;
+                                                                                      color: #714BB9;
+                                                                                      font-size: 24px;
+                                                                                      border-left: 1px solid #3C1C78;
+                                                                                      z-index: -1;
+                                                                                    } */
+                                                                                  /* body
+                                                                                    margin-top: 80px
+                                                                                    background-color: #1A004A */
